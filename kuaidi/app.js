@@ -34,9 +34,9 @@ App({
     })
   },
 
-  getExpressInfo:function(nu,cb){
+  getExpressInfo: function (nu, cb) {
     wx.request({
-      url: 'http://apis.baidu.com/kuaidicom/express_api/express_api?muti=0&order=desc&nu='+nu, //仅为示例，并非真实的接口地址
+      url: 'http://apis.baidu.com/kuaidicom/express_api/express_api?muti=0&order=desc&nu=' + nu, //仅为示例，并非真实的接口地址
       data: {
         x: '',
         y: ''
@@ -45,8 +45,8 @@ App({
         'apikey': '865012d03b6a034f9b63a8a6b2b81802' // 默认值
       },
       success: function (res) {
-       // console.log(res.data)
-       cb(res.data)
+        // console.log(res.data)
+        cb(res.data)
       }
     })
 
